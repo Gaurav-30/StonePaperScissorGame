@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="header">
+        <h1>Let's Play Stone Paper Scissor</h1>
+
+        <div class="something" style="position: absolute; display: flex; margin-top: 160px;">
+            <button class="btn" onclick="location.reload()" style="font-size: 25px; border-radius: 5px; background-color: #e2f3f5;">Refresh</button>
+        </div>
+    </div>
+
+    <div class="tab">
+    <table style="width:100%">
+        <tr>
+          <th><i class="fa fa-laptop" aria-hidden="true"></i></th>
+          <th><i class="fa fa-user-o" aria-hidden="true"></i></th> 
+        </tr>
+        <tr>
+          <td style="font-weight: bolder;" id="count1">0</td>
+          <td style="font-weight: bolder;" id="count2">0</td>
+        </tr>
+      </table>
+    </div>
+    <div class="mid">
+        <div>
+            <p id="para" style="font-size: 50px; color: #071a52;"></p>
+        </div>        
+    </div>
+
+    <div>
+        <p id="top" style="display: none; margin-top: 20px;">Computer Chose</p>
+    </div>
+
+    <div class="comp">
+        <div >
+            <img src="#" alt="Choose from below" id="mid-img">
+        </div>
+    </div>
+
+    <!-- <div class="mid">
+        <div>
+            <p id="para" style="font-size: 50px; color: rgb(255, 0, 0);"></p>
+        </div>        
+    </div> -->
+
+    <div>
+        <p id="top1" style="display: none; margin-top: 30px;">You Chose</p>
+    </div>
+    
+    <div class="footer">
+        
+        <div class="foot_container">
+        <div class="rimg img1">
+            <img src="rock.jpg" alt="" style="border-radius: 100px;" onclick="i1()" id="i1">
+        </div>
+
+        <div class="rimg img2">
+            <img src="paper.jpg" alt="" style="border-radius: 100px;" onclick="i2()" id="i2">
+        </div>
+
+        <div class="rimg img3">
+            <img src="scissor.jpg" alt="" style="border-radius: 100px;" onclick="i3()" id=i3>
+        </div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
